@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>ANIMACION 3 CSS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .contenedor{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+  
+        .cuadrito{
+             width: 100px;
+             height: 100px;
+             background-color: black;
+             position: absolute;
+             left: 150px; /* fijo en horizontal */
+             top: 0px;    /* punto inicial arriba */
+             
+             animation: cuadrito 3s infinite ease-in; 
+        }
+
+        @keyframes cuadrito{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="contenedor">
+          <div class="cuadrito"></div>
+     </div>
+</body>
+</html>
